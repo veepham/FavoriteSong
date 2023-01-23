@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 id="good_song" class="display-4 red-text" onmouseover="newColor()" onmouseout="oldColor()">Welcome!</h1>
+    <h2 class="red-text">Listen to my favorite song:</h2>
+    <p>
+        <button onclick="myMove()">Click Me</button>
+    </p>
+    <br /><br />
+
+    <div id="myContainer">
+        <div id="myAnimation">
+            <iframe width="640" height="430"
+                    src="https://www.youtube.com/embed/MSRcC626prw">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+
